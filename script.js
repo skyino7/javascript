@@ -25,4 +25,19 @@ if (z > 5)
     console.log(y);
 }
 
-console.log(y);
+// console.log(y);
+
+let arr1 = [];
+let rows = 4;
+let columns = 3;
+
+// creating two-dimensional array
+for (let i = 0; i < rows; i++) {
+  arr1[i] = [];
+  for (let j = 0; j < columns; j++) {
+    arr1[i][j] = j;
+  }
+}
+
+document.writeln(arr1);
+// console.log(arr);
