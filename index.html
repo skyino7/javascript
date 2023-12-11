@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Tutorial</title>
+    <script>
+        /* JS in the head section */
+        function doSomething() {
+            document.getElementById("heading").textContent = "New heading";
+        }
+    </script>
 </head>
 <body>
+    <!-- <select id="dropdown">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    <script src="event.js"></script> -->
+
+		<h1 id="heading">Some Page Heading</h1>
+		<button onclick="doSomething()" value="">Click me!</button>
 
     <script src="script.js"></script>
 </body>
