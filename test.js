@@ -40,4 +40,4 @@ let details = [
 //  let details1 = JSON.parse(details[0].subjectDetails);
 //  console.log(details1);
 
-details.map((detail, i) => console.log(i + " ", detail));
+details.map((detail, i) => console.log(i, detail));
