@@ -40,4 +40,18 @@ let details = [
 //  let details1 = JSON.parse(details[0].subjectDetails);
 //  console.log(details1);
 
-details.map((detail, i) => console.log(i, detail));
+// details.map((detail, i) => console.log(i, detail));
+
+let num = [1, 2, 2, 3, 4];
+let dup = [];
+let i, j = 0;
+
+for (i = 0; i < num.length; i++) {
+   for (j = i + 1; j < num.length; j++) {
+      if (num[i] === num[j] && !dup.includes(num[i])) {
+         dup.push(num[i]);
+      }
+   }
+}
+
+console.log(dup);
