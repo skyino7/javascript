@@ -42,7 +42,7 @@ let details = [
 
 // details.map((detail, i) => console.log(i, detail));
 
-let num = [1, 2, 2, 3, 4];
+let num = [1, 2, 2, 2, 3, 4];
 let dup = [];
 let i, j = 0;
 
@@ -55,3 +55,22 @@ for (i = 0; i < num.length; i++) {
 }
 
 console.log(dup);
+
+let count = {};
+let a = 0;
+for (a = 0; a < num.length; a++) {
+   if (count[num[a]]) {
+      count[num[a]] += 1;
+   } else {
+      count[num[a]] = 1;
+   }
+}
+
+console.log(count);
+
+for (let key in count) {
+   console.log(`${key}: ${count[key]}`);
+   // if (count[key] > 1) {
+   //    console.log(key);
+   // }
+}
