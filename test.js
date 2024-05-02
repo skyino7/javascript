@@ -70,7 +70,7 @@ console.log(count);
 
 for (let key in count) {
    console.log(`${key}: ${count[key]}`);
-   // if (count[key] > 1) {
-   //    console.log(key);
-   // }
+   if (count[key] > 1) {
+      console.log(key);
+   }
 }
